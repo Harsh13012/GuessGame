@@ -1,0 +1,43 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+
+}
+
+h1 {
+    color: #b84c4c;
+}
+
+h2 {
+    color: #adce18;
+}
+
+h3 {
+    color: #FFD700;
+}
+
+p {
+    margin-bottom: 1.5em;
+}
+
+.btn-retro {
+    background-color: black;
+    color: rgb(54, 195, 54);
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px 20px;
+    border: 2px solid green;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-retro:hover {
+    background-color: rgb(28, 198, 28);
+    color: black;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}

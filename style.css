@@ -1,10 +1,17 @@
 body {
-    background-color: #379683;
+    background-color: #1b1b1b;
 }
 
 img {
     width: 100%;
 }
+
+h1,
+h2 {
+    color: #FFD700;
+}
+
+
 
 .cards {
     display: grid;
@@ -17,4 +24,112 @@ img {
 header {
     text-align: center;
     margin-bottom: 30px;
+
+}
+
+
+h2 {
+    font-size: 40px;
+}
+
+button {
+    position: relative;
+    height: 65px;
+    width: 182px;
+    margin: 0 40px;
+    font-size: 23px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    outline: none;
+    cursor: pointer;
+    background: #0d0d0d;
+    overflow: hidden;
+    transition: 0.6s;
+}
+
+button:first-child {
+    color: #206592;
+    border-color: #206592;
+}
+
+button:last-child {
+    color: #ce5c0c;
+    border-color: #ce5c0c;
+}
+
+button:before,
+button:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    filter: blur(30px);
+    opacity: 0.4;
+    transition: 0.6s;
+}
+
+button:before {
+    width: 60px;
+    background: rgba(255, 255, 255, 0.6);
+    transform: translateX(-130px) skewX(-45deg);
+}
+
+button:after {
+    width: 30px;
+    background: rgba(255, 255, 255, 0.6);
+    transform: translateX(-130px) skewX(-45deg);
+}
+
+button:hover:before,
+button:hover:after {
+    opacity: 0.6;
+    transform: translateX(320px) skewX(-45deg);
+}
+
+button:hover {
+    color: #f2f2f2;
+}
+
+button:hover:first-child {
+    background: #206592;
+}
+
+button:hover:last-child {
+    background: #ce5c0c;
+}
+
+.text-animation {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    position: relative;
+    animation: shine 3s linear infinite;
+    font-family: sans-serif;
+    font-size: 50px;
+
+}
+
+.text-animation p {
+    font-size: 50px;
+
+}
+
+
+
+@keyframes shine {
+    0% {
+        background-position-x: -500%;
+    }
+
+    100% {
+        background-position-x: 500%;
+    }
 }

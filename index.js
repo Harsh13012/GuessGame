@@ -67,8 +67,8 @@ cardEls.forEach(function (ele, index) {
             } else {
                 canGuess = false
                 setTimeout(function () {
-                    cardEls[firstGuess].setAttribute('src', './images/red.svg')
-                    cardEls[index].setAttribute('src', './images/red.svg')
+                    cardEls[firstGuess].setAttribute('src', './images/astronaut.svg')
+                    cardEls[index].setAttribute('src', './images/astronaut.svg')
                     firstGuess = null
                     canGuess = true
                 }, 1500)
@@ -87,7 +87,7 @@ function resetGame() {
         canGuess = true
         flippedCards = 0
         cardEls.forEach(function (ele, index) {
-            ele.setAttribute('src', './images/red.svg')
+            ele.setAttribute('src', './images/astronaut.svg')
         })
         cards.forEach(function (card, index) {
             card.matched = false
